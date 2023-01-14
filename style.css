@@ -4,6 +4,9 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+body{
+    margin: 0;
+}
 
 p {
     margin: 0;
@@ -11,7 +14,7 @@ p {
 
 .container {
     width: 70%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 main {
@@ -43,6 +46,7 @@ header {
     gap: 8%;
     /* align-items: center; */
     margin-top: 80px;
+    margin-bottom: 50px;
 }
 
 .banner-title {
@@ -71,7 +75,7 @@ header {
     font-size: 16px;
 }
 
-.fa-solid{
+.fa-solid {
     height: 24px;
     width: 24px;
 }
@@ -80,21 +84,151 @@ header {
     background-image: url(images/Circle\ design.svg);
     padding: 10px 20px;
     background-repeat: no-repeat;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background-position: top;
+    background-size: 93%;
 }
 
-.banner-pic img{
+.banner-pic img {
     width: 100%;
 }
 
+.logos {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
 
+.popular-collection h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    color: #3A3A3A;
+    margin: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.card {
+    padding: 18px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    gap: 5px;
+}
+
+.thumbnail img {
+    width: 300px;
+    height: 256px;
+}
+
+.product-name {
+    font-size: 28px;
+    color: #18191F;
+    margin: 0;
+}
+
+.price {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+}
+
+.card .fa-solid {
+    width: 11.07px;
+    height: 10.32px;
+    margin-right: 4px;
+    color: #FB8200;
+}
+
+.rating {
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.porduct-info {
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+}
+
+.see-more {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(224, 44, 109, 0.87);
+    margin-top: 30px;
+    text-align: right;
+}
+
+.join{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.join-right{
+    padding-right: 30px;
+}
+
+.join-right h2{
+    font-weight: 700;
+font-size: 38px;
+color: #0A0826;
+margin-top: 0;
+}
+
+.join-right p{
+    font-weight: 700;
+font-size: 16px;
+color: #6C6C6C;
+}
+
+.btn-join{
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+footer{
+    background: #0A0826;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    padding: 70px;
+}
+
+footer h3{
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+footer .fa-brands{
+    width: 32px;
+    height: 32px;
+}
+
+footer span{
+    background-color: #21232c;
+    border-radius: 50%;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
 
 @media screen and (max-width: 576px) {
 
-    .container{
+    .container {
         width: 100%;
     }
+
     .menu,
     .nav {
         flex-direction: column;
@@ -105,9 +239,37 @@ header {
         gap: 10px;
     }
 
-    .banner{
+    .banner {
         flex-direction: column-reverse;
         text-align: center;
+    }
+
+    .banner-title {
+        margin-top: 30px;
+    }
+
+    .logos {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        scale: 0.7;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .join{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .join-left img{
+        width: 100%;
+    }
+    .join-right{
+        padding: 0px;
     }
 }
 
@@ -118,12 +280,23 @@ header {
         width: 90%;
         margin-bottom: 20px;
     }
+
     .menu {
         gap: 10px;
     }
 
-    .banner div{
+    .banner div {
         width: 45%;
+    }
+
+
+    .logo {
+        scale: 0.8;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+
     }
 }
 
@@ -131,6 +304,7 @@ header {
     .banner-title {
         width: 600px;
     }
+
     .banner-text {
         width: 520px;
     }
