@@ -1,53 +1,137 @@
 /* Utilities */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
 
-p{
+p {
     margin: 0;
 }
 
-.container{
-    width: 80%;
+.container {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* navbar styles */
-header{
+header {
     display: flex;
     justify-content: center;
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
 }
 
-.menu{
+.menu {
     display: flex;
     gap: 35px;
     align-items: center;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    gap: 8%;
+    /* align-items: center; */
+    margin-top: 80px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 52px;
+    color: #3A3A3A;
+    margin: 0;
+}
+
+.banner-text {
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A;
+    margin: 18px 0;
+}
+
+.btn-primary {
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    width: 196px;
+    height: 44px;
+    border-radius: 41px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.fa-solid{
+    height: 24px;
+    width: 24px;
+}
+
+.banner-pic {
+    background-image: url(images/Circle\ design.svg);
+    padding: 10px 20px;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.banner-pic img{
+    width: 100%;
 }
 
 
 
 
 @media screen and (max-width: 576px) {
-    .menu, .nav{
+
+    .container{
+        width: 100%;
+    }
+    .menu,
+    .nav {
         flex-direction: column;
         align-items: center;
     }
 
-    .menu{
+    .menu {
         gap: 10px;
     }
-    
+
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 }
 
 
 /* Medium devices like tabs */
-@media screen and (min-width: 577px) and (max-width: 992px){
-    .menu{
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .container {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .menu {
         gap: 10px;
+    }
+
+    .banner div{
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .banner-title {
+        width: 600px;
+    }
+    .banner-text {
+        width: 520px;
     }
 }
